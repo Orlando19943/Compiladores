@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+</head>
+<body>
+  <div class='mermaid'>
+graph LR
+1--a-->2
+4--b-->5
+6--ε-->4
+6--ε-->1
+5--ε-->7
+2--ε-->7
+8--ε-->6
+8--ε-->10
+7--ε-->6
+7--ε-->10
+10--a-->12
+12--b-->14
+14--b-->15
+style 8 fill:#84a98c
+style 15 stroke:#84a98c,stroke-width:4px
+  </div>
+  <div>
+(a|b)*.a.b.b  </div>
+   <script src='https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js'></script>
+   <script> mermaid.initialize({theme: 'neutral'}); </script>
+   </body>
+</html>
